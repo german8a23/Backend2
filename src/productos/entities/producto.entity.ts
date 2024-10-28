@@ -9,6 +9,7 @@ export class Producto {
   @Column()
   nombre: string;
 
+
   @Column('int')
   stock: number;
 
@@ -21,6 +22,6 @@ export class Producto {
   @Column()
   categoria: string;
 
-  @Column()
-  descripcion: string;
+  // @Column()
+  // descripcion: string;
 }

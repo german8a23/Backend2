@@ -8,9 +8,10 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports:[
     MongooseModule.forFeature([
       {
-        name: Categoria.name,
-        schema: CategoriaSchema,
+      name: Categoria.name,
+      schema: CategoriaSchema
       },
+
     ]),
   ],
   controllers: [CategoriasController],

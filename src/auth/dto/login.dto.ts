@@ -5,7 +5,7 @@ export class LoginDto {
   @IsEmail({}, { message: 'Ingrese un email válido' })
   readonly email: string;
 
-  @IsNotEmpty()
+  @IsNotEmpty({ message: 'No se permiten espacios en blnaco' })
   @IsString()
   readonly password: string;
 }
